@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "patch-ios12-webview-keyboard": "^1.0.5",
     "react": "17.0.1",
     "react-native": "0.64.0",
     "react-native-webview": "^11.3.2",
