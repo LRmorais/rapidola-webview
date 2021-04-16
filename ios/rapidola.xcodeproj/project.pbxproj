@@ -145,7 +145,6 @@
 				D4020BDB4F8BBD6C04F82551 /* Pods-rapidola-rapidolaTests.debug.xcconfig */,
 				D7A40E2EB76F8CD916E0718F /* Pods-rapidola-rapidolaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
