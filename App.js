@@ -1,8 +1,8 @@
-import React, {useState, useRef } from 'react';
+import React, {useState, useRef, useEffect } from 'react';
 import {
   StyleSheet,
   View,
-  Text,
+
 } from 'react-native';
 
 import WebView from 'react-native-webview';
@@ -10,32 +10,21 @@ import WebView from 'react-native-webview';
 
 const App = () => {
   const [url, setUrl] = useState('https://www.rapidola.com.br/')
-  const [urlA, setUrlA] = useState('https://www.rapidola.com.br/')
-  const [loading, setLoading] = useState(false)
-  const webViewRef = useRef(null)
+  const webViewRef = useRef();
 
-  // if(urlA != url){
-
-  // }
-
-  // if(loading){
-  //   setTimeout(function(){ setLoading(false) }, 2000);
-  //   return <Text>Carregando</Text>
-  // }
+  useEffect(() => {
+    setTimeout(function(){ webViewRef.current.reload() }, 50);
+  }, [url]);
 
   return (
 
-      <View style={{ flex: 1, marginBottom: 25 }}>
+      <View style={{ flex: 1, marginBottom: 20, marginTop: 20 }}>
         <WebView
-          ref={webViewRef}
+          ref={(ref) => webViewRef.current = ref} 
           source={{ uri: url }}
-          // onNavigationStateChange={(navState) => {
-          //   setUrlA(navState.url)
-          //   if(url != urlA){
-          //     setLoading(true)
-          //   }
-            
-          // }}
+          onNavigationStateChange={(navState) => {
+            setUrl(navState.url)
+          }}
           cacheEnabled={true}
           limitsNavigationsToAppBoundDomains={false}
           geolocationEnabled={true}
@@ -45,12 +34,9 @@ const App = () => {
           useWebKit={false}
           style={styles.content}
         />
-
       </View>
   );
 }
-
-
 
 const styles = StyleSheet.create({
   container: {
@@ -59,14 +45,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 50
   },
-  content: {
-    flex: 1,
-    marginTop: '10%',
-  },
-  keyboardAvoidingView: {
-    flexGrow: 1, flexShrink: 1
-  },
-
 });
 
 export default App;
