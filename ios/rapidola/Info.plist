@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -35,8 +35,10 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Permitir que o &quot;Rapidola&quot; tenha acesso à sua localização para funcionalidade de entregas enquanto você estiver usando o app?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Permitir que o &quot;Rapidola&quot; tenha acesso à sua localização para funcionalidade de entregas enquanto você estiver usando o app?</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -51,6 +53,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Permitir que &quot;Rapidola&quot; use seus dados de localização para funcionalidade de delivery?</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 </dict>

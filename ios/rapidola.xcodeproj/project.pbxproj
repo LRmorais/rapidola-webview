@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1786C5F07C599B211E870895 /* libPods-rapidola-rapidolaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228E0EA35346809C76D5C474 /* libPods-rapidola-rapidolaTests.a */; };
+		7D0DB26A2318078F89C50621 /* libPods-rapidola-rapidolaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3462A1B50804834047E877D /* libPods-rapidola-rapidolaTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CE16891AD4E3CC01EBE50163 /* libPods-rapidola.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C800D1D672672FA24B67DBA /* libPods-rapidola.a */; };
+		C1881A1A963E092C60F98638 /* libPods-rapidola.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 273635F46EA7D7801A275196 /* libPods-rapidola.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,10 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rapidola/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rapidola/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rapidola/main.m; sourceTree = "<group>"; };
-		228E0EA35346809C76D5C474 /* libPods-rapidola-rapidolaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rapidola-rapidolaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273635F46EA7D7801A275196 /* libPods-rapidola.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rapidola.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D244730625631B6447562C /* Pods-rapidola.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rapidola.release.xcconfig"; path = "Target Support Files/Pods-rapidola/Pods-rapidola.release.xcconfig"; sourceTree = "<group>"; };
-		7C800D1D672672FA24B67DBA /* libPods-rapidola.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rapidola.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rapidola/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3462A1B50804834047E877D /* libPods-rapidola-rapidolaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rapidola-rapidolaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4020BDB4F8BBD6C04F82551 /* Pods-rapidola-rapidolaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rapidola-rapidolaTests.debug.xcconfig"; path = "Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7A40E2EB76F8CD916E0718F /* Pods-rapidola-rapidolaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rapidola-rapidolaTests.release.xcconfig"; path = "Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1786C5F07C599B211E870895 /* libPods-rapidola-rapidolaTests.a in Frameworks */,
+				7D0DB26A2318078F89C50621 /* libPods-rapidola-rapidolaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE16891AD4E3CC01EBE50163 /* libPods-rapidola.a in Frameworks */,
+				C1881A1A963E092C60F98638 /* libPods-rapidola.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7C800D1D672672FA24B67DBA /* libPods-rapidola.a */,
-				228E0EA35346809C76D5C474 /* libPods-rapidola-rapidolaTests.a */,
+				273635F46EA7D7801A275196 /* libPods-rapidola.a */,
+				A3462A1B50804834047E877D /* libPods-rapidola-rapidolaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				91EA2011074C69DC6533E9BA /* [CP] Embed Pods Frameworks */,
-				0DE8CAD3E88FC0AE89995575 /* [CP] Copy Pods Resources */,
+				E8829F16696DB3A2F5595C6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +183,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				0FF1BA26113E5B652C306B11 /* [CP] Embed Pods Frameworks */,
-				51CA7D390A68D71DD4C34CC5 /* [CP] Copy Pods Resources */,
+				671FEB381FB91EAED42E9625 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +218,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -264,23 +265,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		0DE8CAD3E88FC0AE89995575 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0FF1BA26113E5B652C306B11 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,23 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		51CA7D390A68D71DD4C34CC5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55071CDD679A2FBE9187E0DD /* [CP] Check Pods Manifest.lock */ = {
@@ -335,6 +302,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671FEB381FB91EAED42E9625 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola/Pods-rapidola-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A5326891BC2B17155DE9560 /* [CP] Check Pods Manifest.lock */ = {
@@ -374,6 +358,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8829F16696DB3A2F5595C6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rapidola-rapidolaTests/Pods-rapidola-rapidolaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -491,11 +492,12 @@
 				DEVELOPMENT_TEAM = 8S4EG3P545;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = rapidola/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -503,9 +505,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rapidola;
 				PRODUCT_NAME = rapidola;
-				PROVISIONING_PROFILE_SPECIFIER = "profile rapidola";
+				PROVISIONING_PROFILE_SPECIFIER = rapidola_profile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -521,11 +524,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8S4EG3P545;
 				INFOPLIST_FILE = rapidola/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -533,8 +537,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rapidola;
 				PRODUCT_NAME = rapidola;
-				PROVISIONING_PROFILE_SPECIFIER = "profile rapidola";
+				PROVISIONING_PROFILE_SPECIFIER = rapidola_profile;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
