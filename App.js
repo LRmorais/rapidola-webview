@@ -6,32 +6,46 @@ import {
 } from 'react-native';
 import WebView from 'react-native-webview';
 import {request,check, PERMISSIONS, RESULTS} from 'react-native-permissions';
-
+import Geolocation from 'react-native-geolocation-service';
 
 
 const App = () => {
-  request(PERMISSIONS.IOS.APP_TRACKING_TRANSPARENCY).then((result) => {
-    // console.log(result)
-  });
 
-  request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE).then((result) => {
-    // console.log(result)
-  });
-  
-  check(PERMISSIONS.IOS.APP_TRACKING_TRANSPARENCY)
+  useEffect(() => {
+    request(PERMISSIONS.IOS.APP_TRACKING_TRANSPARENCY).then((result) => {
+      console.log(result)
+    });
+    function requererLocation(){
+      request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE).then((result) => {
+        console.log(result)
+      });
+    }
+    check(PERMISSIONS.IOS.LOCATION_ALWAYS)
   .then((result) => {
     switch (result) {
       case RESULTS.UNAVAILABLE:
-        // console.log('This feature is not available (on this device / in this context)');
+        requererLocation()
+      // console.log('This feature is not available (on this device / in this context)');
         break;
       case RESULTS.DENIED:
-        // console.log('The permission has not been requested / is denied but requestable');
+        requererLocation()
+      // console.log('The permission has not been requested / is denied but requestable');
         break;
       case RESULTS.LIMITED:
         // console.log('The permission is limited: some actions are possible');
+        requererLocation()
         break;
       case RESULTS.GRANTED:
-        // console.log('The permission is granted');
+        Geolocation.getCurrentPosition(
+          (position) => {
+            console.log(position);
+          },
+          (error) => {
+            // See error code charts below.
+            console.log(error.code, error.message);
+          },
+          { enableHighAccuracy: true, timeout: 1500000, maximumAge: 1000000}
+      );
         break;
       case RESULTS.BLOCKED:
         // console.log('The permission is denied and not requestable anymore');
@@ -41,31 +55,9 @@ const App = () => {
   .catch((error) => {
     // …
   });
+  },[]);
 
-  check(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE)
-  .then((result) => {
-    switch (result) {
-      case RESULTS.UNAVAILABLE:
-        // console.log('This feature is not available (on this device / in this context)');
-        break;
-      case RESULTS.DENIED:
-        // console.log('The permission has not been requested / is denied but requestable');
-        break;
-      case RESULTS.LIMITED:
-        // console.log('The permission is limited: some actions are possible');
-        break;
-      case RESULTS.GRANTED:
-        // console.log('The permission is granted');
-        break;
-      case RESULTS.BLOCKED:
-        // console.log('The permission is denied and not requestable anymore');
-        break;
-    }
-  })
-  .catch((error) => {
-    // …
-  });
-  
+
 
   
   const [url, setUrl] = useState("https://www.rapidola.com.br/")
@@ -105,7 +97,7 @@ const App = () => {
           allowUniversalAccessFromFileURLs={true}
           javaScriptCanOpenWindowsAutomatically={true}
           injectedJavaScript={INJECTED_JAVASCRIPT}
-          useWebKit={false}
+          useWebKit={true}
           style={styles.content}
         />
       </View>

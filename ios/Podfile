@@ -14,6 +14,7 @@ target 'rapidola' do
   permissions_path = '../node_modules/react-native-permissions/ios'
   pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
   pod 'Permission-AppTrackingTransparency', :path => "#{permissions_path}/AppTrackingTransparency"
+  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
 
   target 'rapidolaTests' do
     inherit! :complete

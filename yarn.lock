@@ -5370,6 +5370,11 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-geolocation-service@^5.3.0-beta.1:
+  version "5.3.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-native-geolocation-service/-/react-native-geolocation-service-5.3.0-beta.1.tgz#91b78e8f87caa0fd4fd1a2384bb48a6309ec715a"
+  integrity sha512-VfocBBSrUfXAdMikWYy8IY9ndzzn0uOM15ncs7DUMQvCpnayC92PJtRSZrSGKEuUubUkcXRqvZIMowZDMwHGVA==
+
 react-native-permissions@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-3.0.3.tgz#aa90649728a9720b0de9cfcfdb447b35a6630de0"

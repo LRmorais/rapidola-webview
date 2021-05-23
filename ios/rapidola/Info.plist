@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Precisamos da sua localização para mostrar lojas e serviços perto de você.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -35,8 +37,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Permitir que o "Rapidola" tenha acesso à sua localização para funcionalidade de entregas enquanto você estiver usando o app?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Precisamos da sua localização para mostrar lojas e serviços perto de você.</string>
 	<key>NSUserTrackingUsageDescription</key>
